@@ -9,12 +9,10 @@ import FeatureList from '@/app/module/FeatureList/FeatureList'
 import OfferCard from './module/Offercard/offerCard'
 import Quotes from './module/Quotes/Quotes'
 import Scrollbutton from './component/ReUseable/Scrollbutton'
-import Singlepage from './Singlepage/Singlepage'
 export default function Home() {
   return (
     <>
-  <div className=''>    
-  {/* <Singlepage/>  */}
+  <div>
      <Header />
       <Banner />
       <Topselling />

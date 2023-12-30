@@ -9,7 +9,7 @@ type Props = {}
 
 const Patner = (props: Props) => {
     return (
-        <div className='grid justify-evenly grid-cols-2 md:grid-cols-5 items-center pb-[100px] pt-[100px] ml-10'>
+        <section className='grid justify-evenly grid-cols-2 md:grid-cols-5 items-center md:p-16 my-5'>
             <div>
                 < Image src={I1} alt='1' />
             </div>
@@ -25,7 +25,7 @@ const Patner = (props: Props) => {
             <div className=' hidden md:block'>    
                 < Image src={I5} alt='1' />
             </div>
-        </div>
+        </section>
 
     )
 }

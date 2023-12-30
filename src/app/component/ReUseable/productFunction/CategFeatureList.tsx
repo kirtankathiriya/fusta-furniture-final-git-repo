@@ -1,16 +1,14 @@
 import React from 'react';
 import { Product } from './path';
 import Pric from './Pric';
+import CommonTitle from '../Dividetitle/Commontitle';
 
 
 const Categ1 = ({ productData }: { productData: Product[] }) => {
   return (
-    <>
-    <div className='text-center p-10'>
-      <h1 className='text-2xl mb-5 md:text-4xl'>Featured Products</h1>
-      <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit</h3>
-    </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-5 pl-14 pr-14 text-center justify-between items-center ">
+    <div className='p-2 md:p-16'>
+      <CommonTitle title='Featured Products' subtitle='Lorem ipsum dolor sit amet consectetur adipisicing elit'/>
+      <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-5 text-center justify-between items-center ">
         {productData.map((product, index) => (
           <div className="box1 pb-7" key={index}>
             <div className='relative group bg-slate-600 '>
@@ -27,8 +25,8 @@ const Categ1 = ({ productData }: { productData: Product[] }) => {
             </div>
           </div>
         ))}
-      </div>
-    </>
+      </section>
+    </div>
   );
 };
 
