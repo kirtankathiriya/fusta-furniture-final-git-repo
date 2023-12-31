@@ -9,6 +9,7 @@ import FeatureList from '@/app/module/FeatureList/FeatureList'
 import OfferCard from './module/Offercard/offerCard'
 import Quotes from './module/Quotes/Quotes'
 import Scrollbutton from './component/ReUseable/Scrollbutton'
+import SubsCribePage from './Subscribe/subsCribe'
 export default function Home() {
   return (
     <>
@@ -22,6 +23,7 @@ export default function Home() {
       <OfferCard />
       <Quotes/>
       <Scrollbutton/>
+      <SubsCribePage />
       <Patner/>
       <Footer />
       </div>
