@@ -4,7 +4,7 @@ type Props = {}
 
 const Divider = () => {
     return (
-        <div className='Breadcrumb w-screen text-center p-[80px] sm:p-[90px] md:p-24 bg-no-repeat bg-scroll bg-center bg-cover bg-white' style={{ backgroundImage: 'url(/icon/dividerPhoto.jpg)' }}>
+        <div className='Breadcrumb  text-center p-[80px] sm:p-[90px] md:p-24 bg-no-repeat bg-scroll bg-center bg-cover bg-white' style={{ backgroundImage: 'url(/icon/dividerPhoto.jpg)' }}>
             <div className="container max-w-screen-xl">
                 <div className="row flex flex-wrap -ml-4 -mr-4">
                     <div className="col basis-7/12  flex-shrink-0 flex-grow-0 relative pr-4 pl-4">

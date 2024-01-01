@@ -13,7 +13,7 @@ export default function App() {
         <>
             <Swiper navigation={true} modules={[Navigation]} className="mySwip">
                 <SwiperSlide>
-                    <section className='flex flex-wrap bg-[#f4f4f4] z-0 justify-around w-screen p-16'>
+                    <section className='flex flex-wrap bg-[#f4f4f4] z-0 justify-around  p-16'>
                         <div className='flex w-1/2 justify-center md:justify-end'>
                             <div className=' pb-0 gap-10 p-0 md:p-0 m-10 md:mr-0'>
                                 <div className='justify-center pt-3 text-4xl text-orange-600 items-start'>Top Selling!</div>
@@ -32,7 +32,7 @@ export default function App() {
                     </section>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <section className='flex flex-wrap bg-[#f4f4f4] z-0 justify-around w-screen my-16'>
+                    <section className='flex flex-wrap bg-[#f4f4f4] z-0 justify-around p-16'>
                     <div className=' w-1/2 hidden lg:flex justify-center'>
                             <Image src={pic2} alt='error'/>
                         </div>

@@ -10,7 +10,7 @@ type Props = {}
 const Footer = (props: Props) => {
     return (
         <>
-            <section className="grid grid-cols-1 w-screen md:grid-cols-2 bg-slate-100  font-normal">
+            <section className="grid grid-cols-1  md:grid-cols-2 bg-slate-100  font-normal">
                 <div className='w-full tracking-widest p-10'>
                     <h1 className='pt-6 mb-4 font-bold '>My Account</h1>
                     <p className='flex hover:text-red-500 cursor-pointer items-center'><CiLocationOn />184 Main Rd E,St Albans VIC 3021,Australia</p>

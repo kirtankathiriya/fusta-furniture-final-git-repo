@@ -67,7 +67,7 @@ type Props = {}
 
 function offerCard({ }: Props) {
   return (
-    <section className="md:p-16 w-screen">
+    <section className="md:p-16 ">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-1  m-5">
         <div className="relative">
           <Image src={i1} alt="yellow chair photo" className="w-fit" />
