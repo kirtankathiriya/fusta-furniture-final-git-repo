@@ -12,7 +12,7 @@ const HeaderMiddleMenu = (props: Props) => {
     };
 
     return (
-        <div className="grid grid-cols-1 md:grid-cols-2 bg-[#E97730] text-white font-semibold">
+        <div className="grid w-screen grid-cols-1 md:grid-cols-2 bg-[#E97730] text-white font-semibold">
            
             <div className="m-3 text-center  md:text-start mx-16">
                 <h2>Welcome To Fusta-Demo</h2>

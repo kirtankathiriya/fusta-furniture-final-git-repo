@@ -6,7 +6,7 @@ type Props = {}
 const Topselling = (props: Props) => {
     return (
         <>
-            <section className="grid grid-cols-1 md:grid-cols-2">
+            <section className="grid grid-cols-1 w-screen md:grid-cols-2">
                 <div className='relative ml-0 md:ml-20'>
                     <Image src={i} alt='Top Selling Photo' className='relative' />
                     <div className='absolute top-1/2 left-0 transform -translate-x-1/2  -rotate-90'>

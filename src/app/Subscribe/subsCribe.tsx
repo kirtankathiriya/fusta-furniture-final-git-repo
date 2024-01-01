@@ -9,28 +9,36 @@ type Props = {}
 
 const SubsCribePage = (props: Props) => {
     return (
-        <section>
-            <div className="grid grid-cols-1 md:grid-cols-2 md:p-16 mb-3">
+        <section className="grid grid-cols-1 w-screen md:grid-cols-2 md:p-16 mb-3">
+          
+                <div className=' '>
                 <h3 className='col-span-1 md:col-span-2 text-2xl mb-5 md:text-center'>Follow us on Instagram <a href="#" className='hover:text-orange-500'>@furniture</a></h3>
-                <div className="flex flex-col md:flex-row gap-5 items-center md:items-end">
-                    <Image src={i1} alt='network slow' />
-                    <Image src={i2} alt='network slow' />
+                <div className="flex flex-col md:flex-row gap-3 items-center md:items-end lg:justify-end">
+                   <div className='w-1/2  bg-slate-600' > <Image src={i1} alt='network slow' className='hover:opacity-50'/></div>
+                   <div className='w-1/2  bg-slate-600'  ><Image src={i2} alt='network slow' className='hover:opacity-50'/></div>
                 </div>
-                <div className="child2 items-start">
-                    <div>
-                        <CommonTitle title='Subscribe' subtitle='Lorem ipsum dolor sit amet consectetur elit.' />
-                    </div>
-                    <div className='flex flex-col items-center'>
-                        <div>
-                            <label htmlFor="email" className='sr-only'>Enter E-mail</label>
-                            <input type="email" placeholder='your email address' className='p-5 mx-32 border border-slate-400 justify-end'></input>
-                        </div>
-                        <div className='mt-5'>
+                </div>
+                <div className="justify-center flex  ">
+                    <div className=' flex flex-col pt-8 w-screen lg:w-1/2 items-center  gap-3'>
+                      <h1 className='text-2xl  mb-5 md:text-4xl font-medium items-center'>subscribe</h1>
+                      <p className='text-base items-center'>Lorem ipsum dolor sit, consect adipisicing elit. </p>
+
+                        {/* <CommonTitle title='Subscribe' subtitle='Lorem ipsum dolor sit amet consectetur elit.' /> */}
+                    
+                    <div className='flex flex-col  w-screen md:w-1/2 items-center'>
+
+                       
+                            <label htmlFor="email" className=' m-screen sr-only'>Enter E-mail</label>
+                            <input type="email" placeholder='your email address' className='p-4   border border-slate-400 justify-end'></input>
+                      
                             <ButtonCommon Name='Subscribe' />
-                        </div>
+                        
+                    </div>
                     </div>
                 </div>
-            </div>
+                
+                
+        
         </section>
     )
 }

@@ -3,7 +3,7 @@ import 'tailwindcss/tailwind.css';
 import { Product } from '@/app/component/ReUseable/productFunction/path'; 
 import Categ from '@/app/component/ReUseable/productFunction/Categ';
 
-const App2 = () => {
+const App = () => {
   const productData: Product[] = [
     {
       image: 'a.jpeg',
@@ -66,4 +66,4 @@ const App2 = () => {
   return <Categ productData={productData} />;
 };
 
-export default App2;
+export default App;
