@@ -1,6 +1,6 @@
 import { HeaderBottom } from '@/app/component/Header/headerBottom'
 import HeaderMiddleMenu from '@/app/component/Header/headerMiddle'
-import CommonDivider from '@/app/component/ReUseable/homeDivider/commonDivider'
+import CommonDivider from '@/components/common/homeDivider/commonDivider'
 import Footer from '@/app/component/foter/footer'
 import React from 'react'
 

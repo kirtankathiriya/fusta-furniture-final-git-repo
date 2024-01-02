@@ -1,7 +1,7 @@
 import React from 'react'
 import HeaderMiddleMenu from '../../component/Header/headerMiddle'
 import { HeaderBottom } from '../../component/Header/headerBottom'
-import CommonDivider from '../../component/ReUseable/homeDivider/commonDivider'
+import CommonDivider from '../../../components/common/homeDivider/commonDivider'
 import Footer from '@/app/component/foter/footer'
 
 type Props = {}

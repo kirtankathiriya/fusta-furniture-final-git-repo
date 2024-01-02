@@ -1,7 +1,7 @@
 import React from 'react';
 import 'tailwindcss/tailwind.css';
-import { Product } from '@/app/component/ReUseable/productFunction/path'; 
-import Categ from '@/app/component/ReUseable/productFunction/Categ';
+import { Product } from '@/components/common/productFunction/path'; 
+import Categ from '@/components/common/productFunction/Categ';
 
 const App2 = () => {
   const productData: Product[] = [

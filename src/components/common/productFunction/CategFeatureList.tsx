@@ -1,8 +1,7 @@
 import React from 'react';
 import { Product } from './path';
 import Pric from './Pric';
-import CommonTitle from '../Dividetitle/Commontitle';
-
+import CommonTitle from '@/components/Dividetitle/Commontitle';
 
 const Categ1 = ({ productData }: { productData: Product[] }) => {
   return (

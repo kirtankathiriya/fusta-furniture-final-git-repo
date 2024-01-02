@@ -2,7 +2,7 @@ import React from 'react';
 import { Product } from './path';
 import Hover from './Hover';
 import Pric from './Pric';
-import CommonTitle from '../Dividetitle/Commontitle';
+import CommonTitle from '@/components/Dividetitle/Commontitle';
 
 
 const Categ = ({ productData }: { productData: Product[] }) => {

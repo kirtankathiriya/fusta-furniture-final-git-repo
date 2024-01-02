@@ -3,9 +3,9 @@ import React from 'react'
 import i1 from '../../../public/subscribePhoto/image1.jpg'
 import i2 from '../../../public/subscribePhoto/image2.jpg'
 import CommonTitle from '../component/ReUseable/Dividetitle/Commontitle'
-import ButtonCommon from '../component/ReUseable/Button/button'
 import { FiInstagram } from "react-icons/fi";
 import { FaInstagram } from 'react-icons/fa'
+import ButtonCommon from '@/components/common/Button/button'
 
 
 type Props = {}
