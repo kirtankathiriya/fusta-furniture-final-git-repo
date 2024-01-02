@@ -7,7 +7,7 @@ import FeatureList from '@/app/module/FeatureList/FeatureList'
 import OfferCard from './module/Offercard/offerCard'
 import Quotes from './module/Quotes/Quotes'
 import Scrollbutton from '../components/common/Scrollbutton'
-import SubsCribePage from './Subscribe/subsCribe'
+import SubsCribePage from './module/Subscribe/subsCribe'
 import Header from '@/components/common/header/header'
 import Footer from '@/components/common/foter/footer'
 export default function Home() {
