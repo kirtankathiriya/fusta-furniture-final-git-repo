@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import pic from "../../../public/icon/logo.jpg";
 import { FaShoppingBag } from "react-icons/fa";
 import CommonForm from "./commonForm";
-import Checkoutcard from "../component/ReUseable/Checkoutcard";
+import Checkoutcard from "@/components/Checkoutcard";
 
 const YourPage = () => {
   const [showBillingAddress, setShowBillingAddress] = useState(false);
@@ -16,10 +16,10 @@ const YourPage = () => {
   return (
     <>
       <main className="ml-10 mr-10">
-        <div className="flex flex-row justify-between mr-5 mt-2">
+        {/* <div className="flex flex-row justify-between mr-5 mt-2">
           <Image src={pic} alt="company logo" />
           <FaShoppingBag className="mt-3 hover:text-[#E97730] size" />
-        </div>
+        </div> */}
         <div className="grid grid-cols-1 md:grid-cols-2 caret-orange-500">
           <div className="mt-7 ml-5">
             <div className="contact flex justify-between">
@@ -129,7 +129,7 @@ const YourPage = () => {
           </div>
 
           <div className="flex flex-col self-start py-10 h-full bg-slate-100 rounded-md top px-4 gap-5">
-            <div className="sticky top-10">
+            <div className="sticky top-32">
               <div className="card-section flex flex-col gap-4">
                 <Checkoutcard />
                 <Checkoutcard />
