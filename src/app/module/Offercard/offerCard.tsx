@@ -67,13 +67,8 @@ type Props = {}
 
 function offerCard({ }: Props) {
   return (
-<<<<<<< HEAD
     <section className="md:p-16 ">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-1  m-5">
-=======
-    <section className="md:p-16">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-5 my-2">
->>>>>>> 435838422fb32c8f334a3d129f9e9564bd8cc972
         <div className="relative">
           <Image src={i1} alt="yellow chair photo" className="w-fit" />
           <div className="absolute inset-0 flex flex-col justify-center items-start text-white bg-opacity-30 p-6">

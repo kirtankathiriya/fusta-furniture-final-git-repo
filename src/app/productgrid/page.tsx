@@ -1,9 +1,9 @@
 import Prods from '../component/Dipesh/App'
 import Pagesection from '../module/Pagesection'
-import Scrollbutton from '../component/ReUseable/Scrollbutton'
 import Shopsidebar from '../module/Shopsidebar'
 import Shoptopbar from '../module/Shoptopbar'
 import CommonDivider from '../component/ReUseable/homeDivider/commonDivider'
+import Scrollbutton from '../component/ReUseable/Scrollbutton/Scrollbutton'
 
 export default function Home() {
   return (
