@@ -32,7 +32,7 @@ export default function App() {
                     </section>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <section className='flex flex-wrap bg-[#f4f4f4] z-0 justify-around w-screen my-16'>
+                    <section className='flex flex-wrap bg-[#f4f4f4] z-0 justify-around w-screen mb-28 p-16 md:p-0'>
                     <div className=' w-1/2 hidden lg:flex justify-center'>
                             <Image src={pic2} alt='error'/>
                         </div>
