@@ -14,7 +14,7 @@ const CommonDivider = ({ Name }: Props) => {
     };
 
     return (
-        <div className="relative mt-7">
+        <div className="relative ">
             <div className="w-full" style={divStyle}></div>
             <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
                 <h2 className="text-black text-2xl font-bold tracking-widest">{Name}</h2>

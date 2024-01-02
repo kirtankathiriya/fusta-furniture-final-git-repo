@@ -6,11 +6,11 @@ type Props = {}
 const Topselling = (props: Props) => {
     return (
         <>
-            <section className="grid grid-cols-1 md:grid-cols-2">
-                <div className='relative ml-0 md:ml-20'>
-                    <Image src={i} alt='Top Selling Photo' className='relative' />
+            <section className="grid grid-cols-1  pt-8  md:grid-cols-2 ">
+                <div className='relative ml-28  md:ml-20 '>
+                    <Image src={i} alt='Top Selling Photo' className='relative justify-center flex ' />
                     <div className='absolute top-1/2 left-0 transform -translate-x-1/2  -rotate-90'>
-                        <button type='button' className='p-2 rounded-full bg-slate-100 w-72'>
+                        <button type='button' className='p-2 rounded-full  bg-slate-100 w-72'>
                             WELCOME TO FURNITURE
                         </button>
                     </div>
