@@ -1,9 +1,9 @@
 import React from 'react';
 import 'tailwindcss/tailwind.css';
-import { Product } from '@/app/component/ReUseable/productFunction/path'; 
-import Categ from '@/app/component/ReUseable/productFunction/Categ';
+import { Product } from '.'; 
+import Categ from './Categ';
 
-const App = () => {
+const Prods = () => {
   const productData: Product[] = [
     {
       image: 'a.jpeg',
@@ -66,4 +66,4 @@ const App = () => {
   return <Categ productData={productData} />;
 };
 
-export default App;
+export default Prods;

@@ -15,29 +15,17 @@ const SubsCribePage = (props: Props) => {
         <section className="grid grid-cols-1  md:grid-cols-2 md:p-16 mb-3">
 
             <div className=' '>
-                <h3 className='col-span-1 md:col-span-2 text-2xl mb-5 md:text-center text-center'>Follow us on Instagram <a href="#" className='hover:text-orange-500'>@furniture</a></h3>
-
+                <h3 className='col-span-1 md:col-span-2 text-2xl mb-5 md:text-center sm:justify-center text-center'>Follow us on Instagram <a href="#" className='hover:text-orange-500'>@furniture</a></h3>
                 <div className="flex flex-col sm:flex-row sm:justify-center gap-3 ml-0 items-center lg:justify-start">
-                    <div className=' bg-slate-600 relative group' >
-                        <div><Image src={i1} alt='network slow' className='hover:opacity-50' /></div>
-                        <div className="z-10 flex justify-center absolute bottom-1/4 inset-x-1/2 opacity-0 transition duration-500 scale-0 group-hover:opacity-100 group-hover:-translate-y-14 group-hover:scale-100 items-center">
-                                    <div className=' w-10 h-10 cursor-pointer text-white hover:text-orange-500 flex justify-center items-center'>
-                                    <FiInstagram size={30}  />
-                                    </div>
-                            
+                    <div className=' bg-slate-600 relative' >
+                        <Image src={i1} alt='network slow' className='hover:opacity-50' />
+                        <div className='absolute  opacity-0 hover:opacity-100 left-1/2  top-[45%] '><FiInstagram size={20} />
                         </div>
                     </div>
-                    <div className='  bg-slate-600 relative group'  >
-                        <div><Image src={i2} alt='network slow' className='hover:opacity-50' /></div>
-                        <div className="z-10 flex justify-center absolute bottom-1/4 inset-x-1/2 opacity-0 transition duration-500 scale-0 group-hover:opacity-100 group-hover:-translate-y-14 group-hover:scale-100 items-center">
-                        <div className=' w-10 h-10 cursor-pointer text-white hover:text-orange-500 flex justify-center items-center'>
-                        
-                                    <FiInstagram size={30} />
-                                    </div>
-                                    
-                            
+                    <div className='  bg-slate-600 relative'  >
+                        <Image src={i2} alt='network slow' className='hover:opacity-50' />
+                        <div className='absolute opacity-0 hover:opacity-100 left-1/2 top-[45%]'> <FiInstagram size={20} />
                         </div>
-                    
 
                     </div>
 
