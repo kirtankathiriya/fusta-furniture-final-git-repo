@@ -52,7 +52,7 @@ export const HeaderBottom = () => {
 
 
   return (
-    <section className='flex items-center  shadow-sm sticky bg-white h-[60px] top-0 z-20 justify-between md:p-16'>
+    <section className='flex items-center shadow-sm sticky bg-white h-[83px] top-0 z-20 justify-between md:p-14'>
       {/* Left section with logo */}
       <div className=' '>
         <Image src={logo1} alt='Fusta Logo' />
@@ -88,10 +88,9 @@ export const HeaderBottom = () => {
           <li
             onMouseEnter={menuList}
             onMouseLeave={menuList}
-            className='relative '
+            className='relative ml-0'
           >
-            <a href="#" className='hover:text-[#E97730] '>Pages</a>
-          
+            <a href="#" className='hover:text-[#E97730]'>Pages</a>
             {
               isMenu && (
                 <div className='grid grid-cols-3 fixed'>
@@ -115,7 +114,7 @@ export const HeaderBottom = () => {
                     </ul>
                   </div>
 
-                  <div className='relative '>
+                  <div className='relative'>
                     <ul className='absolute bg-white p-3 mt-1 shadow-md'>
                       <li>
                         <h3 className='font-bold'>Column Two</h3>
@@ -173,7 +172,7 @@ export const HeaderBottom = () => {
           </li>
 
           <li className='relative ml-3'>
-            <a href="/productgrid" className='hover:text-[#E97730]'>Product</a>
+            <a href="#" className='hover:text-[#E97730]'>Product</a>
           </li>
 
           <li className='relative ml-3'>
@@ -209,10 +208,21 @@ export const HeaderBottom = () => {
 
           </a>
         </div>
-        <div className='md:hidden hover:text-[#E97730]'>
-          <ImMenu3 className='w-7 h-7' onClick={toggleMobileMenu} />
-        </div>
+        <div className='md:hidden ml-2'>
+        <ImMenu3 className='w-8 h-8' onClick={toggleMobileMenu} />
+        {isMobileMenuOpen && (
+          <div className='grid grid-cols-1 fixed bg-white p-3 shadow-md w-full right-0 mt-6'>
+            {/* Add your mobile menu items here */}
+            <a href='#' className='block py-2 hover:text-[#E97730]'>Home</a>
+            <a href='#' className='block py-2 hover:text-[#E97730]'>Pages</a>
+            <a href='#' className='block py-2 hover:text-[#E97730]'>shop</a>
+            <a href='#' className='block py-2 hover:text-[#E97730]'>Product</a>
+            <a href='#' className='block py-2 hover:text-[#E97730]'>About Us</a>
+            <a href='#' className='block py-2 hover:text-[#E97730]'>Contact US</a>
+          </div>
+        )}
+      </div>
       </div>
     </section>
-  );
+  )
 };
