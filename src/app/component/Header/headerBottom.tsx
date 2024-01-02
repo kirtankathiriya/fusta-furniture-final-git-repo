@@ -173,7 +173,7 @@ export const HeaderBottom = () => {
           </li>
 
           <li className='relative ml-3'>
-            <a href="#" className='hover:text-[#E97730]'>Product</a>
+            <a href="/productgrid" className='hover:text-[#E97730]'>Product</a>
           </li>
 
           <li className='relative ml-3'>
