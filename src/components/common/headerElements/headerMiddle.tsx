@@ -17,7 +17,7 @@ const HeaderMiddleMenu = (props: Props) => {
             <div className="m-3 text-center  md:text-start mx-16">
                 <h2>Welcome To Fusta-Demo</h2>
             </div>
-            <div className="relative flex justify-center items-center md:justify-end mx-16">
+            <div className="relative flex justify-center items-center md:justify-end mx-16 z-40">
                 <button type="button" onClick={toggleMenu}>
                     India USD($)
                 </button>

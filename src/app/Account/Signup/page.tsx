@@ -1,14 +1,9 @@
-import { HeaderBottom } from '@/app/component/Header/headerBottom'
-import HeaderMiddleMenu from '@/app/component/Header/headerMiddle'
 import CommonDivider from '@/components/common/homeDivider/commonDivider'
-import Footer from '@/app/component/foter/footer'
 import React from 'react'
 
 function SignUP() {
   return (
     <>
-      <HeaderMiddleMenu />
-      <HeaderBottom />
       <CommonDivider Name="Create Account" />
 
       <div className="max-w-md mx-auto mt-8 p-6 bg-white rounded-lg shadow-md">
@@ -67,7 +62,6 @@ function SignUP() {
           <h4 className='hover:text-orange-500 mt-4 mb-4'><a href="http://localhost:3000/">Return to Store</a></h4>
         </div>
       </div>
-      <Footer />
     </>
   )
 }
