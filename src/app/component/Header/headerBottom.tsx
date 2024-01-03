@@ -52,7 +52,7 @@ export const HeaderBottom = () => {
 
 
   return (
-    <section className='flex items-center shadow-sm sticky bg-white h-[83px] top-0 z-20 justify-between md:p-14'>
+    <div className='flex items-center  shadow-sm sticky bg-white h-[83px] top-0 z-20 justify-between md:px-28'>
       {/* Left section with logo */}
       <div className=' '>
         <Image src={logo1} alt='Fusta Logo' />
@@ -223,6 +223,7 @@ export const HeaderBottom = () => {
         )}
       </div>
       </div>
-    </section>
+    </div>
   )
 };
+

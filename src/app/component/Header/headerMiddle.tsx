@@ -12,12 +12,12 @@ const HeaderMiddleMenu = (props: Props) => {
     };
 
     return (
-        <div className="grid  grid-cols-1 md:grid-cols-2 bg-[#E97730] text-white font-semibold">
+        <section className="grid   md:px-28 grid-cols-1 md:grid-cols-2 bg-[#E97730] text-white font-semibold">
            
-            <div className="m-3 text-center  md:text-start mx-16">
+            <div className="m-3 text-center  md:text-start ">
                 <h2>Welcome To Fusta-Demo</h2>
             </div>
-            <div className="relative flex justify-center items-center md:justify-end mx-16">
+            <div className="relative flex justify-center items-center md:justify-end ">
                 <button type="button" onClick={toggleMenu}>
                     India USD($)
                 </button>
@@ -26,7 +26,7 @@ const HeaderMiddleMenu = (props: Props) => {
                     onClick={toggleMenu}
                 />
                 {isMenuOpen && (
-                    <div className="absolute right-0 bg-[#333333] flex flex-col text-center z-20 top-5 md:top-11 pl-5">
+                    <div className="absolute right-0 bg-[#333333] flex flex-col text-center z-30 top-5 md:top-11 pl-5">
                         <a href="#" className="hover:text-[#E97730]">Argentina USD($)</a>
                         <a href="#" className="hover:text-[#E97730]">Algeria USD($)</a>
                         <a href="#" className="hover:text-[#E97730]">Afghanistan USD($)</a>
@@ -38,7 +38,7 @@ const HeaderMiddleMenu = (props: Props) => {
                     </div>
                 )}
             </div>
-        </div>
+        </section>
     );
 };
 
