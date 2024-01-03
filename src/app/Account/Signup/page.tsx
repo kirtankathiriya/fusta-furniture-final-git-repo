@@ -1,4 +1,5 @@
 import CommonDivider from '@/components/common/homeDivider/commonDivider'
+
 import React from 'react'
 
 function SignUP() {

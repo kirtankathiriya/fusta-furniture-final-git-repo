@@ -11,12 +11,12 @@ const Shopsidebar = () => {
                 <h4 className="single-sidebar-widget-title text-lg font-semibold text-black mb-4 pb-4 relative border-b border-b-slate-300 border-solid uppercase not-italic">
                     Availability
                 </h4>
-                <div className="sidebar-body pt-2">
+                <div className="sidebar-body pt-2" >
                     <div className="filter-value-counter flex justify-between mb-4">
                         <span className="filter-value-selected border-2 border-dashed border-slate-100 px-3 py-1 rounded-md font-normal">0 Selected</span>
 
                     </div>
-                    <ul className="checkbox-container categories-list">
+                    <ul className="hidden checkbox-container categories-list">
                         <li className="block mb-3 text-[#555] p-0 uppercase">
                             <div className="custom-control custom-checkbox pl-0 relative inline-flex min-h-6 mr-4">
                                 <input type="checkbox" value='1' id='Filter-availability-1' className="custom-control-input h-6 opacity-100 relative z-10 leading-5 text-[#333] inline mr-2 w-auto font-normal not-italic border-solid border-slate-300 border-2 rounded select-text" />

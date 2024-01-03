@@ -1,6 +1,7 @@
 import React from 'react'
 import CommonDivider from '../../../components/common/homeDivider/commonDivider'
 
+
 type Props = {}
 
 function Login({ }: Props) {
