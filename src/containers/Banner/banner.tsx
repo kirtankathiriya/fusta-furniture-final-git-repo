@@ -1,9 +1,9 @@
 "use client"
 import React, { createContext } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import pic from '../../../../public/icon/home.webp'
+import pic from '../../../public/icon/home.webp'
 import 'swiper/css';
-import pic2 from '../../../../public/icon/slier-inner-2.webp'
+import pic2 from '../../../public/icon/slier-inner-2.webp'
 import 'swiper/css/navigation';
 import { Navigation } from 'swiper/modules';
 import Image from 'next/image';
