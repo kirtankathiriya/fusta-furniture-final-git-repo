@@ -7,8 +7,8 @@ import { ImMenu3 } from 'react-icons/im';
 
 
 export const HeaderBottom = () => {
+
   const [isHomeMenuOpen, setIsHomeMenuOpen] = useState(false);
-  const [isShopMenuOpen, setIsShopMenuOpen] = useState(false);
   const [isMenu, setMenu] = useState(false);
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [isSticky, setIsSticky] = useState(false);
@@ -40,10 +40,6 @@ export const HeaderBottom = () => {
 
   const toggleHomeMenu = () => {
     setIsHomeMenuOpen(!isHomeMenuOpen);
-  };
-
-  const toggleShopMenu = () => {
-    setIsShopMenuOpen(!isShopMenuOpen);
   };
 
   const toggleMobileMenu = () => {
@@ -208,8 +204,19 @@ export const HeaderBottom = () => {
 
           </a>
         </div>
-        <div className='md:hidden hover:text-[#E97730]'>
+        <div className='md:hidden'>
           <ImMenu3 className='w-7 h-7' onClick={toggleMobileMenu} />
+          {isMobileMenuOpen && (
+            <section className='absolute left-0 w-full text-orange-500 border-gray-200 mt-6 p-2 ml-2 '>
+              <ul>
+                <li>Home</li>
+                <li>Pages</li>
+                <li>Product</li>
+                <li>About</li>
+                <li>Contact Us</li>
+              </ul>
+            </section>
+          )}
         </div>
       </div>
     </section>

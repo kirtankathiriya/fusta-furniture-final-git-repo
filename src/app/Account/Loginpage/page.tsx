@@ -4,7 +4,7 @@ import CommonDivider from '../../../components/common/homeDivider/commonDivider'
 
 type Props = {}
 
-function Login({}: Props) {
+function Login({ }: Props) {
   return (
     <>
       <CommonDivider Name="Account" />
