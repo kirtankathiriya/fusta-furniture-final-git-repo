@@ -175,9 +175,9 @@ export const HeaderBottom = () => {
             <a href="/About" className='hover:text-[#E97730]'>About</a>
           </li>
 
-          {/* <li className='relative ml-3'>
+          <li className='relative ml-3'>
             <a href="/Contact" className='hover:text-[#E97730]'>Contact Us</a>
-          </li> */}
+          </li>
         </ul>
       </div>
 
