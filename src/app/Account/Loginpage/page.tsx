@@ -1,16 +1,12 @@
 import React from 'react'
-import HeaderMiddleMenu from '../../component/Header/headerMiddle'
-import { HeaderBottom } from '../../component/Header/headerBottom'
 import CommonDivider from '../../../components/common/homeDivider/commonDivider'
-import Footer from '@/app/component/foter/footer'
+
 
 type Props = {}
 
 function Login({}: Props) {
   return (
     <>
-      <HeaderMiddleMenu />
-      <HeaderBottom />
       <CommonDivider Name="Account" />
 
       <div className="flex justify-center items-center h-screen">
@@ -35,7 +31,6 @@ function Login({}: Props) {
           </div>
         </div>
       </div>
-      <Footer />
     </>
   )
 }

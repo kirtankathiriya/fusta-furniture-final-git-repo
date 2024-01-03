@@ -67,7 +67,7 @@ export const HeaderBottom = () => {
             className='relative'
           >
             <a href='/' className='hover:text-[#E97730]'>Home</a>
-            {isHomeMenuOpen && (
+            {/* {isHomeMenuOpen && (
               <ul className='absolute bg-white p-2 mt-1 w-28'>
                 <li>
                   <a href='#' className='hover:text-[#E97730]'>Home 1</a>
@@ -82,10 +82,10 @@ export const HeaderBottom = () => {
                   <a href="#" className='hover:text-[#E97730]'>Home Rtl</a>
                 </li>
               </ul>
-            )}
+            )} */}
           </li>
 
-          <li
+          {/* <li
             onMouseEnter={menuList}
             onMouseLeave={menuList}
             className='relative ml-0'
@@ -150,10 +150,10 @@ export const HeaderBottom = () => {
                 </div>
               )
             }
-          </li>
+          </li> */}
 
 
-          <li
+          {/* <li
             onMouseEnter={toggleShopMenu}
             onMouseLeave={toggleShopMenu}
             className='relative ml-3'
@@ -169,7 +169,7 @@ export const HeaderBottom = () => {
                 </li>
               </ul>
             )}
-          </li>
+          </li> */}
 
           <li className='relative ml-3'>
             <a href="/Products" className='hover:text-[#E97730]'>Product</a>
@@ -179,9 +179,9 @@ export const HeaderBottom = () => {
             <a href="/About" className='hover:text-[#E97730]'>About</a>
           </li>
 
-          <li className='relative ml-3'>
+          {/* <li className='relative ml-3'>
             <a href="/Contact" className='hover:text-[#E97730]'>Contact Us</a>
-          </li>
+          </li> */}
         </ul>
       </div>
 
