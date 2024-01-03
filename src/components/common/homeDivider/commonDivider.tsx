@@ -1,5 +1,5 @@
 import React from 'react';
-import pictureCommon from '../../../../../public/icon/commonHome.jpg';
+import pictureCommon from '/public/icon/commonHome.jpg';
 
 type Props = {
     Name: string;

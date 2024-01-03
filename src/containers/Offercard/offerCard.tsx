@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
-import i1 from "../../../../public/offerZone/yellowChair.jpg"
-import i2 from "../../../../public/offerZone/redChair.jpg"
+import i1 from "/public/offerZone/yellowChair.jpg"
+import i2 from "/public/offerZone/redChair.jpg"
 
 /*const Offercard: React.FC<Props> = () => {
   return (

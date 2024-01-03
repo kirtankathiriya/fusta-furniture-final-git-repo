@@ -1,9 +1,9 @@
 import React from 'react'
-import I1 from '../../../../public/Partner/partner1.jpg'
-import I2 from '../../../../public/Partner/partner2.jpg'
-import I3 from '../../../../public/Partner/p3.jpg'
-import I4 from '../../../../public/Partner/p4.jpg'
-import I5 from '../../../../public/Partner/p5.jpg'
+import I1 from '/public/Partner/partner1.jpg'
+import I2 from '/public/Partner/partner2.jpg'
+import I3 from '/public/Partner/p3.jpg'
+import I4 from '/public/Partner/p4.jpg'
+import I5 from '/public/Partner/p5.jpg'
 import Image from 'next/image'
 type Props = {}
 

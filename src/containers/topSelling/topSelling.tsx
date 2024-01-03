@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image';
-import i from '../../../../public/icon/topSellingImage.jpg'
+import i from '/public/icon/topSellingImage.jpg'
 type Props = {}
 
 const Topselling = (props: Props) => {
