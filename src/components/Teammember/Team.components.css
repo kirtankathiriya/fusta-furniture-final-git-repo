@@ -54,7 +54,7 @@
     font-size: 35px;
     font-weight: 700;
     line-height: 48px;
-    color: rgb(0, 135, 177);
+    color: #053F5c;
     margin: 0 0 10px 0;
   }
   
@@ -81,7 +81,7 @@
     align-items: center;
     box-shadow: 10px;
     border-radius: 10px;
-      background-color: rgba(223, 245, 255, 0.999);
+     background-color: rgb(253, 232, 216);
   }
   
   .social-media-links {
@@ -93,7 +93,7 @@
   .name {
     font-size: 25px;
     font-weight: 700;
-    color: rgb(0, 135, 177);
+    color: #053F5c;
     margin-top: 0px;
     margin-right: 0px;
     margin-bottom: 5px;
