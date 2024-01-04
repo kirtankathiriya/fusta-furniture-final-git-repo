@@ -59,6 +59,7 @@ const Footer = (props: Props) => {
             </section>
             <div className='flex flex-col bg-slate-200 md:flex-row justify-between p-6'>
                 <section className=''>Copyright&#169;All Right Reserved</section>
+                <a href="/Teampage">Created By Coffine Code</a>
                 <div className="flex ">
                     <div className="flex w-10 h-10 rounded-full fill-current text-black transform transition-transform duration-300 hover:scale-110 hover:text-blue-700  items-center justify-center cursor-pointer">
                         <svg xmlns="http://www.w3.org/2000/svg" height="17" width="17" viewBox="0 0 512 512"><path d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z" /></svg>
