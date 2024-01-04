@@ -15,7 +15,7 @@ const YourPage = () => {
 
   return (
     <>
-      <section className=" border-t-7 p-12">
+      <section className=" border-t-7 sm:p-12">
         <div className="grid grid-cols-1 gap-4 md:grid-cols-2 caret-orange-500">
           <div className="container">
             <div className="contact flex sm:flex-row flex-col justify-between">
@@ -37,7 +37,7 @@ const YourPage = () => {
               <input
                 type="email"
                 placeholder="Email or Mobile Phone Number"
-                className="w-full p-2 my-3"
+                className="w-full p-2 my-3 border"
               />
 
               <div className="flex flex-row gap-2 mt-1">
@@ -67,7 +67,7 @@ const YourPage = () => {
                 </label>
               </div>
 
-              <div className="my-3">
+              <div className="my-3 gap-2 flex flex-col">
                 <h2 className="font-semibold text-2xl">Shipping Method</h2>
                 <div className="flex p-5 border-1	border-orange-500 rounded bg-[#FEF4F2] justify-between">
                   <p>
@@ -127,7 +127,7 @@ const YourPage = () => {
             </form>
           </div>
 
-          <div className="flex flex-col self-start h-full bg-slate-100 rounded-md top px-4 gap-4 py-2">
+          <div className="flex flex-col self-start h-full bg-slate-100 rounded-md top px-2 sm:px-4 gap-4 py-2">
             <div className="sticky top-32 flex flex-col gap-4">
               <div className="card-section flex flex-col gap-4">
                 <Checkoutcard />
