@@ -34,10 +34,10 @@ const SubsCribePage = (props: Props) => {
                 </div>
             </div>
             <div className="flex items-center max-md:justify-center ">
-                <div className=' flex flex-col  items-center  gap-2 my-5'>
-                    <h1 className='text-2xl md:text-4xl font-medium items-center'>subscribe</h1>
-                    <p className='text-start md:text-center'>Lorem ipsum dolor sit, consect adipisicing elit. </p>
-                    <div className='flex flex-col   md:w-1/2 items-center'>
+                <div className=' flex flex-col w-screen items-center  gap-2 '>
+                    <h1 className='text-2xl md:text-4xl font-medium items-center mx-3'>subscribe</h1>
+                    <p className='text-start md:text-center  mx-3'>Lorem ipsum dolor sit, consect adipisicing elit. </p>
+                    <div className='flex flex-col  max-sm:w-screen items-center  mx-3'>
                         <label htmlFor="email" className=' m-screen sr-only'>Enter E-mail</label>
                         <input type="email" placeholder='your email address' className='p-4   border border-slate-400 justify-end'></input>
                         <ButtonCommon Name='Subscribe' />
