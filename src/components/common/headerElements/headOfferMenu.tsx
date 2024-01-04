@@ -13,7 +13,7 @@ const HeadOfferMenu = (props: Props) => {
         <>
             {/* header offer menu  */}
             {topBarVisible && (
-                <section className="top1 bg-gradient-to-r from-[#600300] to-[#092f00] flex items-center p-1 justify-center gap-2 flex-col md:flex-row">
+                <section className="top0 bg-gradient-to-r from-[#600300] to-[#092f00] flex items-center py-2 justify-center gap-2 flex-col md:flex-row">
                     <h3 className="text-white flex text-sm items-end">
                         All Featured Product 50% Off
                         <span className="ml-1">*</span>

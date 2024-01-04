@@ -4,6 +4,7 @@ import Image from 'next/image';
 import logo1 from '../../../../public/icon/logo.jpg';
 import { SlUser } from "react-icons/sl";
 import { ImMenu3 } from 'react-icons/im';
+import Link from 'next/link';
 
 
 export const HeaderBottom = () => {
@@ -48,11 +49,11 @@ export const HeaderBottom = () => {
 
 
   return (
-    <section className='flex items-center shadow-sm sticky bg-white h-[70px] top-0 z-20 justify-between  md:py-11 md:px-16'>
+    <section className='flex items-center shadow-sm sticky bg-white h-[70px] top-0 z-20 justify-between  md:py-4 md:px-16'>
       {/* Left section with logo */}
-      <div className=' '>
+      <Link href="/" className=' '>
         <Image src={logo1} alt='Fusta Logo' />
-      </div>
+      </Link>
 
       {/* Middle section with menu */}
       <div className="hidden md:block">

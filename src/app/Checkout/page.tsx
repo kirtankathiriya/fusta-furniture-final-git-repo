@@ -16,9 +16,9 @@ const YourPage = () => {
   return (
     <>
       <section className=" border-t-7 p-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 caret-orange-500">
-          <div className="ml-3 my-9 mr-5">
-            <div className="contact flex justify-between">
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-2 caret-orange-500">
+          <div className="container">
+            <div className="contact flex sm:flex-row flex-col justify-between">
               <h2 className="font-semibold text-2xl">Contact</h2>
               <p className="text-black-100">
                 Have an account ?{" "}
@@ -127,8 +127,8 @@ const YourPage = () => {
             </form>
           </div>
 
-          <div className="flex flex-col self-start py-10 h-full bg-slate-100 rounded-md top px-4 gap-5">
-            <div className="sticky top-32">
+          <div className="flex flex-col self-start h-full bg-slate-100 rounded-md top px-4 gap-4 py-2">
+            <div className="sticky top-32 flex flex-col gap-4">
               <div className="card-section flex flex-col gap-4">
                 <Checkoutcard />
                 <Checkoutcard />
@@ -139,7 +139,7 @@ const YourPage = () => {
                   <p>Subtotal</p>
                   <p>$1000</p>
                 </div>
-                <div className="shipping flex flex-row justify-between">
+                <div className="shipping flex flex-row justify-between border-spacing-2 border-b-2 border-dashed">
                   <p>Shipping</p>
                   <p className="text-slate-400">$20</p>
                 </div>
@@ -151,7 +151,7 @@ const YourPage = () => {
             </div>
           </div>
 
-          <section className="bg-[#E97730] rounded text-white text-center p-5 font-medium ml-3 mr-5">
+          <section className="bg-[#E97730] rounded text-white text-center p-2 font-medium">
             <button type="button">Complete Order</button>
           </section>
         </div>
