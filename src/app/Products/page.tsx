@@ -11,9 +11,9 @@ export default function Home() {
   return (
     <>
     <CommonDivider Name="Products"/>
-    <div className="content flex min-h-screen flex-col-reverse sm:flex-row justify-between px-16 gap-4 py-8">
+    <div className="content flex min-h-screen flex-col-reverse sm:flex-row justify-between px-4 sm:px-16 gap-4 py-8">
       <Shopsidebar/>
-      <div className="flex flex-col">
+      <div className="flex flex-col gap-2">
         <Shoptopbar variant="grid"/>
         <App3/>
         <Pagesection/>
