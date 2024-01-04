@@ -11,17 +11,17 @@ import Link from "next/link";
 //   price2: string;
 // };
 
-async function getData() {
-  const res = await fetch("https://fakestoreapi.com/products/categories");
+// async function getData() {
+//   const res = await fetch("https://fakestoreapi.com/products/categories");
 
-  const json = await res.json();
+//   const json = await res.json();
 
-  if (!res.ok) {
-    throw new Error(json);
-  }
-  type Product = {json}
-  return json;
-}
+//   if (!res.ok) {
+//     throw new Error(json);
+//   }
+//   type Product = {json}
+//   return json;
+// }
 
 const ProductCard = ({ product }: Product) => {
   return (
