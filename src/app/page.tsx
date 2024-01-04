@@ -1,20 +1,17 @@
-import Footer from './component/foter/footer'
-import Banner from './module/Banner/banner'
-import Divider from './module/Divider/Divider'
-import App2 from './module/Product/App'
-import Header from './module/header/header'
-import Topselling from './module/topSelling/topSelling'
-import Patner from './module/Patner/Patner'
-import FeatureList from '@/app/module/FeatureList/FeatureList'
-import OfferCard from './module/Offercard/offerCard'
-import Quotes from './module/Quotes/Quotes'
-import Scrollbutton from './component/ReUseable/Scrollbutton'
-import SubsCribePage from './Subscribe/subsCribe'
+import Banner from '../containers/Banner/banner'
+import Divider from '../containers/Divider/Divider'
+import App2 from '../containers/Product/App'
+import Topselling from '../containers/topSelling/topSelling'
+import Patner from '../containers/Patner/Patner'
+import FeatureList from '@/containers/FeatureList/FeatureList'
+import OfferCard from '../containers/Offercard/offerCard'
+import Quotes from '../containers/Quotes/Quotes'
+import Scrollbutton from '../components/common/Scrollbutton'
+import SubsCribePage from '../containers/Subscribe/subsCribe'
 export default function Home() {
   return (
     <>
   <div>
-     <Header />
       <Banner />
       <Topselling />
       <App2 />
@@ -25,7 +22,6 @@ export default function Home() {
       <Scrollbutton/>
       <SubsCribePage />
       <Patner/>
-      <Footer />
       </div>
     </>
   )
