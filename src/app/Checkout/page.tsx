@@ -15,19 +15,15 @@ const YourPage = () => {
 
   return (
     <>
-      <main className="ml-10 mr-10">
-        {/* <div className="flex flex-row justify-between mr-5 mt-2">
-          <Image src={pic} alt="company logo" />
-          <FaShoppingBag className="mt-3 hover:text-[#E97730] size" />
-        </div> */}
+      <section className=" border-t-7 p-12">
         <div className="grid grid-cols-1 md:grid-cols-2 caret-orange-500">
-          <div className="mt-7 ml-5">
+          <div className="ml-3 my-9 mr-5">
             <div className="contact flex justify-between">
               <h2 className="font-semibold text-2xl">Contact</h2>
               <p className="text-black-100">
                 Have an account ?{" "}
                 <a
-                  href="http://localhost:3000/Account/Loginpage"
+                  href="/Account/Loginpage"
                   className="text-[rgb(233,119,48)] underline"
                 >
                   Log in
@@ -41,7 +37,7 @@ const YourPage = () => {
               <input
                 type="email"
                 placeholder="Email or Mobile Phone Number"
-                className="w-full p-2 mt-3"
+                className="w-full p-2 my-3"
               />
 
               <div className="flex flex-row gap-2 mt-1">
@@ -56,10 +52,10 @@ const YourPage = () => {
                 </label>
               </div>
 
-              <h2 className="font-semibold text-2xl mt-2">Delivery</h2>
+              <h2 className="font-semibold text-2xl my-3">Delivery</h2>
               <CommonForm />
 
-              <div className="flex flex-row gap-2">
+              <div className="flex flex-row gap-2 my-3">
                 <label>
                   <input
                     type="checkbox"
@@ -71,11 +67,14 @@ const YourPage = () => {
                 </label>
               </div>
 
-              <div className="font-semibold mt-4">
-                <h2>Shipping Method</h2>
-                <p className="text-slate-400 font-normal p-5">
-                  Enter Your Shipping Address To View Available Shipping Method
-                </p>
+              <div className="my-3">
+                <h2 className="font-semibold text-2xl">Shipping Method</h2>
+                <div className="flex p-5 border-1	border-orange-500 rounded bg-[#FEF4F2] justify-between">
+                  <p>
+                    Standard Shipping
+                  </p>
+                  <h3 className="font-semibold">$20</h3>
+                </div>
               </div>
 
               <div className="payment">
@@ -142,7 +141,7 @@ const YourPage = () => {
                 </div>
                 <div className="shipping flex flex-row justify-between">
                   <p>Shipping</p>
-                  <p className="text-slate-400">Enter Shipping address</p>
+                  <p className="text-slate-400">$20</p>
                 </div>
                 <div className="total flex flex-row justify-between text-lg">
                   <p>Total</p>
@@ -152,11 +151,11 @@ const YourPage = () => {
             </div>
           </div>
 
-          <div className="mb-2 bg-[#E97730] rounded text-white text-center font-serif mt-2 p-5 font-medium ml-5">
+          <section className="bg-[#E97730] rounded text-white text-center p-5 font-medium ml-3 mr-5">
             <button type="button">Complete Order</button>
-          </div>
+          </section>
         </div>
-      </main>
+      </section>
     </>
   );
 };
