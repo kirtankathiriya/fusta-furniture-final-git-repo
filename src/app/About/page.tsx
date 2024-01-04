@@ -1,4 +1,5 @@
 import CommonDivider from "@/components/common/homeDivider/commonDivider";
+import CountSection from "@/containers/CountSection";
 import Patner from "@/containers/Patner/Patner";
 import Quotes from "@/containers/Quotes/Quotes";
 import SubsCribePage from "@/containers/Subscribe/subsCribe";
@@ -13,6 +14,7 @@ const About = (props: Props) => {
       <div className="flex flex-col gap-20">
         <CommonDivider Name="About" />
         <Topselling />
+        <CountSection/>
         <Quotes />
         <SubsCribePage />
         <Patner />

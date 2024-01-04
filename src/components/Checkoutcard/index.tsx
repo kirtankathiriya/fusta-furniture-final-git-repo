@@ -4,7 +4,7 @@ type Props = {}
 
 const Checkoutcard = (props: Props) => {
   return (
-    <div className='flex flex-row justify-between items-center bg-slate-200 rounded-md min-w-full p-2'>
+    <div className='flex flex-row justify-between items-center bg-slate-200 rounded-md min-w-full p-2 shadow-lg'>
         <div className='flex flex-row items-center gap-1'>
           <div className='photo-container relative'>
             <img src='./a.jpeg' alt='photo' className='h-16 aspect-square rounded-md'/>

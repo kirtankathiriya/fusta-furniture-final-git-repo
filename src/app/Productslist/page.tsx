@@ -3,6 +3,7 @@ import CommonDivider from "@/components/common/homeDivider/commonDivider";
 import Pagesection from "@/containers/Pageination";
 import App2 from "@/containers/Product/App";
 import App3 from "@/containers/Product/App3";
+import AppList from "@/containers/Product/AppList";
 import Shopsidebar from "@/containers/ShopSideBar";
 import Shoptopbar from "@/containers/ShopTopBar";
 
@@ -20,13 +21,13 @@ export default function Home() {
                 <div className="col basis-3/4 w-3/4">
                   <div className="row flex flex-wrap -mr-4 -ml-4">
                     <div className="cols basis-full max-w-full relative w-full min-h-1 pr-4 pl-4">
-                      <Shoptopbar variant="grid"/>
+                      <Shoptopbar variant="list" />
                     </div>
                     
                   </div>
                   <div className="shop-grid">
                     <div className="product-grid-view" id='product-grid-view'>
-                      <App3/>
+                      <AppList/>
                     </div>
                     <div className="pages-section">
                       <Pagesection/>

@@ -18,7 +18,7 @@ const CategList = ({ productData }: { productData: Product[] }) => {
                   <li className='bg-white font-medium w-14  text-center mb-1 py-1'>{product.discount}</li>
                 </ul>
               </div>
-              <img src={product.image} alt='not found' className='hover:opacity-50 bg-slate-700 duration-150 cursor-pointer'/>
+              <img src={product.image} alt='not found' className='hover:brightness-50 duration-150 cursor-pointer'/>
             </div>
           </div>
           <div className='bg-white w-1/2 ml-2 *:mb-2'>

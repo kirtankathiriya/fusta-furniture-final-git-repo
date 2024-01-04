@@ -1,19 +1,28 @@
 import React from 'react'
 import { IoIosGrid, IoIosList } from 'react-icons/io'
+import clsx from 'clsx'
 
 type Props = {}
 
-const Shoptopbar = () => {
+const Shoptopbar = ({variant}:{variant?:any;}) => {
 
   
 
   return (
     <div className='shop-top-bar flex justify-between py-3 px-4 border border-slate-300 border-solid mb-3'>
         <div className="product-view-mode">
-            <a href='./productgrid' className="change-view block bg-none border-0 float-left leading-none cursor-pointer select-text mx-1 hover:text-[#e97730]">
+            <a href='/Products' className={clsx("change-view block bg-none border-0 float-left leading-none cursor-pointer select-text mx-1",
+            {
+              "text-[#e97730]" : variant === "grid",
+              "text-black hover:text-[#e97730]" : variant === "list",
+            })}>
               <i className="ion-ios-grid-outline"><IoIosGrid size={30}/></i>
             </a>
-            <a href='./productlist' className="change-view block bg-none border-0 float-left leading-none cursor-pointer select-text mx-1 hover:text-[#e97730]">
+            <a href='/Productslist' className={clsx("change-view block bg-none border-0 float-left leading-none cursor-pointer select-text mx-1",
+            {
+              "text-[#e97730]" : variant === "list",
+              "text-black hover:text-[#e97730]" : variant === "grid",
+            })}>
               <i className="ion-ios-list-outline"><IoIosList size={30}/></i>
             </a>
         </div>
