@@ -1,8 +1,5 @@
-import Scrollbutton from "@/components/common/Scrollbutton";
 import CommonDivider from "@/components/common/homeDivider/commonDivider";
 import Pagesection from "@/containers/Pageination";
-import App2 from "@/containers/Product/App";
-import App3 from "@/containers/Product/App3";
 import AppList from "@/containers/Product/AppList";
 import Shopsidebar from "@/containers/ShopSideBar";
 import Shoptopbar from "@/containers/ShopTopBar";
@@ -11,7 +8,21 @@ import Shoptopbar from "@/containers/ShopTopBar";
 export default function Home() {
   return (
     <>
-    <CommonDivider Name='Products'/>
+      <CommonDivider Name="Products"/>
+    <div className="content flex min-h-screen flex-col-reverse sm:flex-row justify-between px-16 gap-4 py-8">
+      <Shopsidebar/>
+      <div className="flex flex-col">
+        <Shoptopbar variant="list"/>
+        <AppList/>
+        <Pagesection/>
+      </div>
+    </div>
+    </>
+  )
+}
+
+
+{/* <CommonDivider Name='Products'/>
     <main className="flex min-h-screen flex-col items-center justify-between">
       <div className="maincont bg-white block box-border">
         <div className="shopifysection w-screen">
@@ -46,7 +57,4 @@ export default function Home() {
         </div>
       </div>
       <Scrollbutton/>
-    </main>
-    </>
-  )
-}
+    </main> */}

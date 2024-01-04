@@ -7,8 +7,8 @@ import CommonTitle from '@/components/Dividetitle/Commontitle';
 
 const Categ3 = ({ productData }: { productData: Product[] }) => {
   return (
-    <section className='md:p-16'>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3  gap-2">
+    <section className='cont'>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-2">
         {productData.map((product, index) => (
           <div className="box1 pb-7 flex justify-center flex-col text-center" key={index}>
             <div className='relative group justify-center items-center'>
