@@ -11,7 +11,7 @@ type Props = {}
 
 const SubsCribePage = (props: Props) => {
     return (
-        <section className="grid grid-cols-1  md:grid-cols-2 md:p-16 mb-3">
+        <section className="grid grid-cols-1  lg:grid-cols-2 md:p-16 mb-3">
             <div className=' '>
                 <h3 className='col-span-1 md:col-span-2 text-2xl mb-5 md:text-center text-center'>Follow us on Instagram <a href="#" className='hover:text-orange-500'>@furniture</a></h3>
                 <div className="flex flex-col sm:flex-row sm:justify-center gap-3 ml-0 items-center lg:justify-start">
@@ -33,11 +33,11 @@ const SubsCribePage = (props: Props) => {
                     </div>
                 </div>
             </div>
-            <div className="flex items-center">
-                <div className=' flex flex-col w-screen items-center  gap-2 my-5'>
+            <div className="flex items-center max-md:justify-center ">
+                <div className=' flex flex-col  items-center  gap-2 my-5'>
                     <h1 className='text-2xl md:text-4xl font-medium items-center'>subscribe</h1>
                     <p className='text-start md:text-center'>Lorem ipsum dolor sit, consect adipisicing elit. </p>
-                    <div className='flex flex-col  w-screen md:w-1/2 items-center'>
+                    <div className='flex flex-col   md:w-1/2 items-center'>
                         <label htmlFor="email" className=' m-screen sr-only'>Enter E-mail</label>
                         <input type="email" placeholder='your email address' className='p-4   border border-slate-400 justify-end'></input>
                         <ButtonCommon Name='Subscribe' />
