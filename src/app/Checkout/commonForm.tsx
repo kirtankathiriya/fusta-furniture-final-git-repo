@@ -2,7 +2,7 @@ import React from "react";
 
 type Props = {};
 
-function CommonForm({}: Props) {
+function CommonForm({ }: Props) {
   return (
     <div className="rounded flex flex-col gap-3">
       <label htmlFor="select country" className="sr-only rounded-md">
@@ -16,21 +16,9 @@ function CommonForm({}: Props) {
         <option value="in">India</option>
       </select>
 
-<<<<<<< HEAD
-            <div className='gap-2 my-3'>
-                <label htmlFor="First Name" className='sr-only'>First Name</label>
-                <input type="text" placeholder='First Name (Optional)' className='mt-4 w-full md:w-1/2 p-2 my-3 border' />
-=======
-      <div className="name">
-        <label htmlFor="First Name" className="sr-only">
-          First Name
-        </label>
-        <input
-          type="text"
-          placeholder="First Name (Optional)"
-          className="mt-4 w-full md:w-1/2 p-2 my-3 border"
-        />
->>>>>>> fcec6818be005eeae4184953855a2ca0e10c36e0
+      <div className='gap-2 my-3'>
+        <label htmlFor="First Name" className='sr-only'>First Name</label>
+        <input type="text" placeholder='First Name (Optional)' className='mt-4 w-full md:w-1/2 p-2 my-3 border' />
 
         <label htmlFor="Last Name" className="sr-only">
           Last Name
@@ -60,41 +48,29 @@ function CommonForm({}: Props) {
         className="w-full p-2 my-3 border"
       />
 
-<<<<<<< HEAD
-            <div className='flex flex-col md:flex-row gap-2'>
-                <label htmlFor="city" className='sr-only'>City</label>
-                <input type="text" placeholder='City' className='w-full p-2 my-3 border' />
-=======
-      <div className="flex flex-col md:flex-row gap-3">
-        <label htmlFor="city" className="sr-only">
-          City
-        </label>
-        <input
-          type="text"
-          placeholder="City"
-          className="w-full p-2 my-3 border"
-        />
->>>>>>> fcec6818be005eeae4184953855a2ca0e10c36e0
+  <div className='flex flex-col md:flex-row gap-2'>
+    <label htmlFor="city" className='sr-only'>City</label>
+    <input type="text" placeholder='City' className='w-full p-2 my-3 border' />
 
-        <label htmlFor="state" className="sr-only">
-          State
-        </label>
-        <input
-          type="text"
-          placeholder="State"
-          className="w-full p-2 my-3 border"
-        />
+      <label htmlFor="state" className="sr-only">
+        State
+      </label>
+      <input
+        type="text"
+        placeholder="State"
+        className="w-full p-2 my-3 border"
+      />
 
-        <label htmlFor="pincode" className="sr-only">
-          PIN Code
-        </label>
-        <input
-          type="tel"
-          placeholder="PIN Code"
-          className="w-full p-2 my-3 border"
-        />
-      </div>
+      <label htmlFor="pincode" className="sr-only">
+        PIN Code
+      </label>
+      <input
+        type="tel"
+        placeholder="PIN Code"
+        className="w-full p-2 my-3 border"
+      />
     </div>
+  </div>
   );
 }
 
