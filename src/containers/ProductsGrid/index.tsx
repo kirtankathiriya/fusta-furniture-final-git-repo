@@ -1,5 +1,5 @@
 "use client";
-import ProductCard from "@/components/common/products/ProductCard";
+import ProductCard from "@/components/common/products/ProductCaller";
 import React from "react";
 
 // const ProductsGrid = () => {
@@ -75,7 +75,6 @@ import React from "react";
 async function getData() {
   const res = await fetch("https://fakestoreapi.com/products");
 
-  
   if (res.ok) {
     const json = await res.json();
     return json;
@@ -88,8 +87,8 @@ export default async function ProductsGrid() {
 
   console.log(data);
 
-  if(!data || data.length == 0) {
-    return <h1>data not available</h1>
+  if (!data || data.length == 0) {
+    return <h1>data not available</h1>;
   }
 
   return (
