@@ -16,6 +16,11 @@ function CommonForm({}: Props) {
         <option value="in">India</option>
       </select>
 
+<<<<<<< HEAD
+            <div className='gap-2 my-3'>
+                <label htmlFor="First Name" className='sr-only'>First Name</label>
+                <input type="text" placeholder='First Name (Optional)' className='mt-4 w-full md:w-1/2 p-2 my-3 border' />
+=======
       <div className="name">
         <label htmlFor="First Name" className="sr-only">
           First Name
@@ -25,6 +30,7 @@ function CommonForm({}: Props) {
           placeholder="First Name (Optional)"
           className="mt-4 w-full md:w-1/2 p-2 my-3 border"
         />
+>>>>>>> fcec6818be005eeae4184953855a2ca0e10c36e0
 
         <label htmlFor="Last Name" className="sr-only">
           Last Name
@@ -54,6 +60,11 @@ function CommonForm({}: Props) {
         className="w-full p-2 my-3 border"
       />
 
+<<<<<<< HEAD
+            <div className='flex flex-col md:flex-row gap-2'>
+                <label htmlFor="city" className='sr-only'>City</label>
+                <input type="text" placeholder='City' className='w-full p-2 my-3 border' />
+=======
       <div className="flex flex-col md:flex-row gap-3">
         <label htmlFor="city" className="sr-only">
           City
@@ -63,6 +74,7 @@ function CommonForm({}: Props) {
           placeholder="City"
           className="w-full p-2 my-3 border"
         />
+>>>>>>> fcec6818be005eeae4184953855a2ca0e10c36e0
 
         <label htmlFor="state" className="sr-only">
           State
