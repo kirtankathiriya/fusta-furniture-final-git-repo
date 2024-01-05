@@ -12,7 +12,7 @@ function CommonForm({}: Props) {
         <select
           name="countries"
           id="countries"
-          className="w-full h-10 text-left px-2"
+          className="w-full h-10 text-left px-4 rounded bg-slate-300"
         >
           <option value="in">India</option>
         </select>

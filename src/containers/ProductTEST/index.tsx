@@ -62,7 +62,7 @@ const productData: Product[] = [
   },
 ];
 
-const ProductTest = () => {
+const ProductTest = ({ display }: { display?: any }) => {
   return (
     <section className="md:p-16">
       <CommonTitle
@@ -70,7 +70,7 @@ const ProductTest = () => {
         subtitle="Lorem ipsum dolor sit amet consectetur adipisicing elit"
       />
       <div>
-        <ProductCaller productData={productData} />
+        <ProductCaller productData={productData} variant={display} />
       </div>
     </section>
   );

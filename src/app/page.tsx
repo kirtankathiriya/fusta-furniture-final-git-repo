@@ -24,7 +24,6 @@ export default function Home() {
         <Scrollbutton />
         <SubsCribePage />
         <Patner />
-        <ProductTest />
       </div>
     </>
   );

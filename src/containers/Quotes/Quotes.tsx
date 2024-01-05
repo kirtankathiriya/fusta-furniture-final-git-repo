@@ -41,31 +41,32 @@ const Quotes: React.FC = () => {
   }, []);
 
   return (
-    <div className="relative bg-black">
-      {/* <img
+    <section>
+      <div className="relative bg-black">
+        {/* <img
         src="https://fusta-demo.myshopify.com/cdn/shop/files/02.jpg?v=1613745605"
         alt="Your Descriptive Alt Text"
         className=" opacity-50 w-full h-96 md:h-full min-"
         
       /> */}
-      <div
-        className=" justify-center top-8 bottom-0 left-0 right-0  text-center p-2 md:p-24 bg-no-repeat bg-scroll bg-center bg-cover opacity-70 backdrop-filter backdrop-blur-smop-blur-sm my-5 "
-        style={{ backgroundImage: "url(/Quotes.jpg)" }}
-      >
-        <div>
-          <p className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-white font-serif">
-            ❝
-          </p>
-          <p className="whitespace-normal font-semibold md:text-2x1  text-white">
-            {slides[currentSlide].text}
-          </p>
-          <p className="flex justify-center py-3 text-sm  text-white ">
-            {slides[currentSlide].author}
-          </p>
+        <div
+          className=" justify-center top-8 bottom-0 left-0 right-0  text-center p-2 md:p-24 bg-no-repeat bg-scroll bg-center bg-cover opacity-70 backdrop-filter backdrop-blur-smop-blur-sm my-5 "
+          style={{ backgroundImage: "url(/Quotes.jpg)" }}
+        >
+          <div>
+            <p className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-white font-serif">
+              ❝
+            </p>
+            <p className="whitespace-normal font-semibold md:text-2x1  text-white">
+              {slides[currentSlide].text}
+            </p>
+            <p className="flex justify-center py-3 text-sm  text-white ">
+              {slides[currentSlide].author}
+            </p>
+          </div>
         </div>
-
       </div>
-    </div>
+    </section>
   );
 };
 

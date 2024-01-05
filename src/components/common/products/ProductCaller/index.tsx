@@ -5,37 +5,29 @@ import Link from "next/link";
 import Hover from "../../productFunction/Hover";
 import Pric from "../../productFunction/Pric";
 import { Product } from "../../productFunction/path";
+import ProductCardTEST from "../ProductCard";
+import clsx from "clsx";
 
-const ProductCaller = ({ productData }: { productData: Product[] }) => {
+const ProductCaller = ({
+  productData,
+  variant,
+}: {
+  productData: Product[];
+  variant?: any;
+}) => {
   return (
-    <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2">
+    // <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2">
+    <section
+      className={clsx("gap-2", {
+        "grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4":
+          variant === "grid4",
+        "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3": variant === "grid3",
+        "flex flex-col text-center justify-between": variant === "list",
+      })}
+    >
       {productData.map((product, index) => (
-        <div
-          className="pb-7 flex justify-center flex-col text-center"
-          key={index}
-        >
-          <div className="relative group justify-center items-center">
-            <div className="box1 bg-white items-center justify-center">
-              <ul className="absolute z-10 py-2 px-0 pl-3">
-                <li className="bg-white font-medium w-14 text-center mb-1 py-1">
-                  Sale
-                </li>
-                <li className="bg-white font-medium w-14 text-center mb-1 py-1">
-                  {product.discount}
-                </li>
-              </ul>
-              <img
-                src={product.image}
-                alt="not found"
-                className="group-hover:brightness-50"
-              />
-            </div>
-            <Hover />
-          </div>
-          <div>
-            <Pric productData={[product]} />
-          </div>
-        </div>
+        //
+        <ProductCardTEST data={product} />
       ))}
     </section>
   );
