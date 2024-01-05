@@ -10,7 +10,7 @@ function CommonForm({ }: Props) {
                 <option value="in">India</option>
             </select>
 
-            <div className='gap-3 my-3'>
+            <div className='gap-2 my-3'>
                 <label htmlFor="First Name" className='sr-only'>First Name</label>
                 <input type="text" placeholder='First Name (Optional)' className='mt-4 w-full md:w-1/2 p-2 my-3 border' />
 
@@ -24,7 +24,7 @@ function CommonForm({ }: Props) {
             <label htmlFor="ApartMent" className='sr-only'>ApartMent</label>
             <input type="text" placeholder='Apartment , Suite , etc. (Optional)' className='w-full p-2 my-3 border' />
 
-            <div className='flex flex-col md:flex-row gap-3'>
+            <div className='flex flex-col md:flex-row gap-2'>
                 <label htmlFor="city" className='sr-only'>City</label>
                 <input type="text" placeholder='City' className='w-full p-2 my-3 border' />
 

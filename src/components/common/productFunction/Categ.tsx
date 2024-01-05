@@ -13,15 +13,14 @@ const Categ = ({ productData }: { productData: Product[] }) => {
         {productData.map((product, index) => (
           <div className="pb-7 flex justify-center flex-col text-center" key={index}>
             <div className='relative group justify-center items-center'>
-              <div className='box1 bg-slate-500'>
+              <div className='box1 bg-white items-center justify-center'>
                 <ul className='absolute z-10 py-2 px-0 pl-3'>
                   <li className='bg-white font-medium w-14 text-center mb-1 py-1'>Sale</li>
                   <li className='bg-white font-medium w-14 text-center mb-1 py-1'>{product.discount}</li>
                 </ul>
-              
                 <img src={product.image} alt='not found' className='group-hover:brightness-50' />
               </div>
-                <Hover />
+              <Hover />
             </div>
             <div>
               <Pric productData={[product]} />
