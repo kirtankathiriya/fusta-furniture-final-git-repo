@@ -8,6 +8,7 @@ import OfferCard from "../containers/Offercard/offerCard";
 import Quotes from "../containers/Quotes/Quotes";
 import Scrollbutton from "../components/common/Scrollbutton";
 import SubsCribePage from "../containers/Subscribe/subsCribe";
+import ProductTest from "@/containers/ProductTEST";
 
 export default function Home() {
   return (

@@ -1,59 +1,36 @@
-"use client";
-import Image from "next/image";
-import Styles from "./productCard.module.css";
-import Link from "next/link";
+import React from "react";
+import Hover from "../../productFunction/Hover";
+import Pric from "../../productFunction/Pric";
+import { Product } from "../../productFunction/path";
 
-// type Product = {
-//   image: string;
-//   title: string;
-//   discount: string;
-//   price1: string;
-//   price2: string;
-// };
+type Props = {};
 
-// async function getData() {
-//   const res = await fetch("https://fakestoreapi.com/products/categories");
-
-//   const json = await res.json();
-
-//   if (!res.ok) {
-//     throw new Error(json);
-//   }
-//   type Product = {json}
-//   return json;
-// }
-
-const ProductCard = ({ product }: Product) => {
+const ProductCardTEST = ({ data }: Product[], index) => {
   return (
-    <div className="flex flex-col justify-between w-full items-center relative my-[10%]">
-      <div className="flex flex-col gap-2 w-full items-center px-4">
-        {/* <Link
-          scroll={false}
-          href={`/products/${product?.handle}`}
-          className={Styles.productImage}
-        > */}
-        {product?.image && (
-          <Image
-            src={product?.image}
-            alt={product?.title || "image"}
-            className=" w-full relative rounded-lg overflow-hidden"
-            priority
-            fill
-            style={{ objectFit: "contain" }}
+    <div className="pb-7 flex justify-center flex-col text-center" key={index}>
+      <div className="relative group justify-center items-center">
+        <div className="box1 bg-white items-center justify-center">
+          <ul className="absolute z-10 py-2 px-0 pl-3">
+            <li className="bg-white font-medium w-14 text-center mb-1 py-1">
+              Sale
+            </li>
+            <li className="bg-white font-medium w-14 text-center mb-1 py-1">
+              {data.discount}
+            </li>
+          </ul>
+          <img
+            src={data.image}
+            alt="not found"
+            className="group-hover:brightness-50"
           />
-        )}
-        {/* </Link> */}
-        <div className="flex flex-col items-center">
-          <p className="font-semibold">{product?.title}</p>
-          {/* <Price id={product.id as string} /> */}
-          <p>$100</p>
         </div>
+        <Hover />
       </div>
-      {/* <div className={Styles.btnWrapper}>
-        <AddToCartBtn type="icon" product={product} />
-      </div> */}
+      <div>
+        <Pric productData={[data]} />
+      </div>
     </div>
   );
 };
 
-export default ProductCard;
+export default ProductCardTEST;
