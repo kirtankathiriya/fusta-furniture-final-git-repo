@@ -1,5 +1,4 @@
 import CommonDivider from '@/components/common/homeDivider/commonDivider'
-
 import React from 'react'
 
 function SignUP() {
@@ -7,7 +6,7 @@ function SignUP() {
     <>
       <CommonDivider Name="Create Account" />
 
-      <div className="max-w-md mx-auto mt-8 p-6 bg-white rounded-lg shadow-md">
+      <div className="max-w-md mx-auto my-10 p-6 bg-white rounded-lg shadow-md">
         <h1 className="text-2xl font-bold mb-4 text-center">Create Account</h1>
         <p className='text-center'>Please register using account details below.</p>
 
@@ -59,8 +58,8 @@ function SignUP() {
           </div>
         </form>
 
-        <div>
-          <h4 className='hover:text-orange-500 mt-4 mb-4'><a href="http://localhost:3000/">Return to Store</a></h4>
+        <div className='flex hover:text-orange-500 mt-4 mb-4'>
+          <h4><a href="http://localhost:3000/">Return to Store</a></h4>
         </div>
       </div>
     </>
