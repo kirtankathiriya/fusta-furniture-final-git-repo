@@ -25,6 +25,7 @@ function CommonForm({}: Props) {
           placeholder="First Name (Optional)"
           className="w-full md:w-1/2 p-2 border"
         />
+>>>>>>> fcec6818be005eeae4184953855a2ca0e10c36e0
 
         <label htmlFor="Last Name" className="sr-only">
           Last Name
